@@ -30,15 +30,15 @@ export const MENULINKS = [
 ];
 
 export const TYPED_STRINGS = [
-  "A pragmatic Full Stack Developer",
-  "I build things for the web",
-  "I create aesthetic and modern apps",
+  "A pragmatic Full Stack Company",
+  "We build Websites and Apps",
+  "We create aesthetic and modern Saas apps",
 ];
 
 export const SOCIAL_LINKS = [
   {
     name: "mail",
-    url: "mailto: shubhporwal73@gmail.com",
+    url: "mailto: info@omniscope.agency",
   },
   {
     name: "linkedin",
@@ -82,10 +82,7 @@ export const SKILLS = {
     "antdesign",
     "chakra-ui",
   ],
-  databases: [
-    "mysql",
-    "mongodb",
-  ],
+  databases: ["mysql", "mongodb"],
   other: ["nodejs", "git", "sanity-io"],
 };
 
@@ -123,7 +120,7 @@ export const PROJECTS = [
     image: "/projects/inshorts.webp",
     blurImage: "/projects/blur/airbnb-blur.webp",
     description:
-    "Conversational Voice Controlled React News Application using Alan AI 🎙",
+      "Conversational Voice Controlled React News Application using Alan AI 🎙",
     gradient: ["#000066", "#6699FF"],
     url: "https://shubh73-inshorts.netlify.app/",
     tech: ["react", "chakra-ui", "alan"],
@@ -141,16 +138,19 @@ export const PROJECTS = [
 
 export const WORK = [
   {
-    company: "Spacenos",
-    title: "Web Developer Intern",
-    location: "Bangalore, Karnataka",
-    range: "September - December 2021",
+    company: "Bridal Box",
+    title: "Shopify ecommerce website",
+    location: "Kuwait",
+    range: "January 2023",
     responsibilities: [
-      "Led the Full Stack revamp on the Admin Portal.",
-      "Developed app integration with REST APIs, Google Maps, User Auth, Stripe and other libraries.",
-      "Implemented CRUD features for all the services and providers.",
+      "Developed and launched a comprehensive Shopify e-commerce website for Bridal Box.",
+      "Managed and uploaded product listings including descriptions, images, and prices.",
+      "Designed and implemented attractive and effective banners for the website to boost customer engagement and sales.",
+      "Integrated SEO best practices to improve website visibility and organic traffic.",
+      "Set up and managed Google Merchandise Store and Google Ads to broaden the company's online presence and reach more potential customers.",
+      "Implemented various payment and shipping options to provide a convenient and hassle-free shopping experience for customers.",
     ],
-    url: "https://spacenos.com/",
+    url: "https://bridalboxkw.com/",
   },
   // {
   //   company: "Spacenos",
@@ -178,4 +178,4 @@ export const WORK = [
   // },
 ];
 
-export const GTAG = "G-5HCTL2TJ5W";
+export const GTAG = "GTM-5P2PWBM";

@@ -43,13 +43,13 @@ const Skills = () => {
         <div className="flex flex-col skills-wrapper">
           <div className="flex flex-col">
             <p className="uppercase tracking-widest text-gray-light-1 seq">
-              SKILLS
+              TOOLS
             </p>
             <h1 className="text-6xl mt-2 font-medium text-gradient w-fit seq">
-              My Skills
+              Tools & Technologies we use
             </h1>
             <h2 className="text-[1.65rem] font-medium md:max-w-lg w-full mt-2 seq">
-              I like to take responsibility to craft aesthetic user experience
+              We like to take responsibility to craft aesthetic user experience
               using modern frontend architecture.{" "}
             </h2>
           </div>

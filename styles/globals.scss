@@ -12,7 +12,14 @@
   margin: 0;
   -webkit-tap-highlight-color: rgba(112, 0, 255, 0.05);
 }
-
+@font-face {
+  font-family: 'Bicyclette-Light';
+  src: url('../public/Bicyclette-Light.woff2') format('woff2'),
+      url('../public/Bicyclette-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   box-sizing: border-box;
   @apply bg-gray-dark-5 text-white overflow-x-hidden;
@@ -54,24 +61,24 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(112, 0, 255, 0.75);
+  background: #FF4426;
   opacity: 0.5;
   border-radius: 1rem;
   transition: all 0.2s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: theme("colors.indigo.dark");
+  background: #FF4426;
   opacity: 1;
 }
 
 ::-moz-selection {
-  background-color: theme("colors.purple");
+  background-color: #FF4426;
   color: #fff;
 }
 
 ::selection {
-  background-color: theme("colors.purple");
+  background-color: #FF4426;
   color: #fff;
 }
 
@@ -167,8 +174,8 @@ input[type="checkbox"] {
     span {
       background: linear-gradient(
         to right,
-        theme("colors.indigo.light"),
-        theme("colors.indigo.dark")
+        #FF6E5F,
+        #FF4426
       );
       margin: auto 1px 0;
       height: 100%;
@@ -260,8 +267,8 @@ input[type="checkbox"] {
               90deg,
               #ffffff 0%,
               #ffffff 50%,
-              #8b31ff 51%,
-              #7000ff 100%
+              #FF6E5F 51%,
+              #FF4426 100%
             );
             background-size: 200% 100%;
             -webkit-background-clip: text;
@@ -292,8 +299,8 @@ input[type="checkbox"] {
 .text-gradient {
   background: linear-gradient(
     to right,
-    theme("colors.indigo.light"),
-    theme("colors.indigo.dark")
+    #FF6E5F,
+    #FF4426,
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -375,7 +382,7 @@ $bg: #f4faff;
         120deg,
         transparent 0%,
         transparent 50%,
-        theme("colors.purple") 50%
+        #FF4426 50%
       );
     }
   }
@@ -397,7 +404,7 @@ $bg: #f4faff;
           &:before {
             content: "";
             position: absolute;
-            box-shadow: 0 0 0 3px rgba(#7000ff, 0.5);
+            box-shadow: 0 0 0 3px rgba(#FF4426, 0.5);
           }
         }
         &:before {
@@ -405,7 +412,7 @@ $bg: #f4faff;
           position: absolute;
           width: 16px;
           height: 16px;
-          border: 2px solid #7000ff;
+          border: 2px solid #FF4426;
           // border-radius: 50%;
           left: 0;
           top: 20%;

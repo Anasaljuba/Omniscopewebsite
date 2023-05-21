@@ -52,7 +52,7 @@ const Footer = () => {
               <span role="img" aria-label="emoji" className="animate-pulse">
                 ❤️
               </span>{" "}
-              by <span className="text-gray.dark.5">Shubh Porwal</span>
+              by <span className="text-gray.dark.5">Anas AlJobbeh</span>
             </p>
           </div>
         </div>
@@ -72,7 +72,7 @@ const Footer = () => {
 
       <style jsx global>{`
         footer {
-          background-image: linear-gradient(270deg, #9f55ff, #7000ff, #8b31ff);
+          background-image: linear-gradient(270deg, #ff6e5f, #ff4426, #ff6e5f);
         }
       `}</style>
     </footer>

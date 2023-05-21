@@ -11,6 +11,8 @@ module.exports = withPWA({
     return config;
   },
   images: {
+    unoptimized: true, // add this line
+
     domains: ["res.cloudinary.com"],
   },
   pwa: {
@@ -19,4 +21,6 @@ module.exports = withPWA({
     skipWaiting: true,
     disable: process.env.NODE_ENV === "development",
   },
+  basePath: "/omniscopewebsite", // replace [repository-name] with your repository's name
+  assetPrefix: "/omniscopewebsite/",
 });

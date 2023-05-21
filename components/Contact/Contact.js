@@ -79,12 +79,15 @@ const Contact = () => {
       empty();
       return setMailerResponse("empty");
     }
-
+    console.log("name", name);
+    console.log("email", email);
+    console.log("message", message);
     setIsSending(true);
     mail({ name, email, message })
       .then((res) => {
         if (res.status === 200) {
           setMailerResponse("success");
+          console.log(res);
           emptyForm();
         } else {
           setMailerResponse("error");
@@ -196,18 +199,18 @@ const Contact = () => {
             {
               "--text-opacity": 0,
               "--border-radius": 0,
-              "--left-wing-background": "#9f55ff",
-              "--right-wing-background": "#9f55ff",
+              "--left-wing-background": "#FF4426",
+              "--right-wing-background": "#FF4426",
               duration: 0.11,
             },
             {
-              "--left-wing-background": "#8b31ff",
-              "--right-wing-background": "#8b31ff",
+              "--left-wing-background": "#FF6E5F",
+              "--right-wing-background": "#FF6E5F",
               duration: 0.14,
             },
             {
-              "--left-body-background": "#9f55ff",
-              "--right-body-background": "#9f55ff",
+              "--left-body-background": "#FF4426",
+              "--right-body-background": "#FF4426",
               duration: 0.25,
               delay: 0.1,
             },
@@ -261,7 +264,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="name"
-                className="block w-full h-12 sm:h-14 px-4 text-xl sm:text-2xl font-mono outline-none border-2 border-purple bg-transparent rounded-[0.6rem] transition-all duration-200 focus:bg-gray-dark-5  active:bg-gray-dark-5"
+                className="block w-full h-12 sm:h-14 px-4 text-xl sm:text-2xl font-mono outline-none border-2 border-orange bg-transparent rounded-[0.6rem] transition-all duration-200 focus:bg-gray-dark-5  active:bg-gray-dark-5"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -278,7 +281,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="email"
-                className="block w-full h-12 sm:h-14 px-4 text-xl sm:text-2xl font-mono outline-none border-2 border-purple bg-transparent rounded-[0.6rem] transition-all duration-200 focus:bg-gray-dark-5  active:bg-gray-dark-5"
+                className="block w-full h-12 sm:h-14 px-4 text-xl sm:text-2xl font-mono outline-none border-2 border-orange bg-transparent rounded-[0.6rem] transition-all duration-200 focus:bg-gray-dark-5  active:bg-gray-dark-5"
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -294,7 +297,7 @@ const Contact = () => {
             <div className="relative mt-14">
               <textarea
                 id="message"
-                className="block w-full h-auto min-h-[10rem] max-h-[20rem] sm:h-14 py-2 px-4 text-xl sm:text-2xl font-mono outline-none border-2 border-purple bg-transparent rounded-[0.6rem] transition-all duration-200 focus:bg-gray-dark-5  active:bg-gray-dark-5"
+                className="block w-full h-auto min-h-[10rem] max-h-[20rem] sm:h-14 py-2 px-4 text-xl sm:text-2xl font-mono outline-none border-2 border-orange bg-transparent rounded-[0.6rem] transition-all duration-200 focus:bg-gray-dark-5  active:bg-gray-dark-5"
                 value={formData.message}
                 onChange={handleChange}
                 required
@@ -355,7 +358,7 @@ const Contact = () => {
 
         input:hover,
         textarea:hover {
-          box-shadow: 0 0 0.3rem #7000ff;
+          box-shadow: 0 0 0.3rem #ff4426;
         }
 
         input:active,

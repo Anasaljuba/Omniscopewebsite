@@ -14,7 +14,10 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-
+      orange: {
+        light: "#FF6E5F",
+        DEFAULT: "#FF4426",
+      },
       white: "#ffffff",
       black: "#000000",
       purple: "#8b31ff",
@@ -43,7 +46,9 @@ module.exports = {
     fontFamily: {
       sans: ["Calibre", "sans-serif"],
       mono: ['"JetBrains Mono"', "monospace"],
+      bicyclette: ["Bicyclette-Light", "sans-serif"],
     },
+
     spacing: {
       px: "1px",
       0: "0px",
